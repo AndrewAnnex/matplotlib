@@ -1255,7 +1255,7 @@ class Axes(_AxesBase):
 
         linestyles : str or tuple or list of such values, default: 'solid'
             Default is 'solid'. Valid strings are ['solid', 'dashed',
-            'dashdot', 'dotted', '-', '--', '-.', ':']. Dash tuples
+            'dashdot', 'dotted', '-', '--', '-.', ':', '..']. Dash tuples
             should be of the form::
 
                 (offset, onoffseq),
@@ -1640,6 +1640,7 @@ class Axes(_AxesBase):
         ``'--'``         dashed line style
         ``'-.'``         dash-dot line style
         ``':'``          dotted line style
+        ``'..'``         dotted line style
         =============    ===============================
 
         Example format strings::
@@ -2923,6 +2924,7 @@ class Axes(_AxesBase):
             ``'--'``   dashed line
             ``'-.'``   dash-dot line
             ``':'``    dotted line
+            ``'..'``    dotted line
             =========  =============
 
             Default: 'C0-', i.e. solid line with the first color of the color
