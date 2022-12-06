@@ -227,6 +227,7 @@ class Line2D(Artist):
         '--':   '_draw_dashed',
         '-.':   '_draw_dash_dot',
         ':':    '_draw_dotted',
+        '..':   '_draw_dotted',
         'None': '_draw_nothing',
         ' ':    '_draw_nothing',
         '':     '_draw_nothing',
@@ -1153,7 +1154,7 @@ class Line2D(Artist):
               ``'-'`` or ``'solid'``                      solid line
               ``'--'`` or  ``'dashed'``                   dashed line
               ``'-.'`` or  ``'dashdot'``                  dash-dotted line
-              ``':'`` or ``'dotted'``                     dotted line
+              ``':'``, ``'..'``, or ``'dotted'``          dotted line
               ``'none'``, ``'None'``, ``' '``, or ``''``  draw nothing
               ==========================================  =================
 
@@ -1444,7 +1445,7 @@ class Line2D(Artist):
 
         See also `~.Line2D.set_linestyle`.
         """
-        return self._linestyle in ('--', '-.', ':')
+        return self._linestyle in ('--', '-.', ':', '..')
 
 
 class _AxLine(Line2D):

@@ -15,6 +15,7 @@ LINESTYLES = {'-': 'Solid',
               '--': 'Dashed',
               '-.': 'DashDot',
               ':': 'Dotted',
+              '..': 'Dotted',
               'None': 'None',
               }
 

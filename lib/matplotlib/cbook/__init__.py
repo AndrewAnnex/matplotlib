@@ -1280,8 +1280,8 @@ def boxplot_stats(X, whis=1.5, bootstrap=None, labels=None,
 
 
 #: Maps short codes for line style to their full name used by backends.
-ls_mapper = {'-': 'solid', '--': 'dashed', '-.': 'dashdot', ':': 'dotted'}
-#: Maps full names for line styles used by backends to their short codes.
+ls_mapper = {'-': 'solid', '--': 'dashed', '-.': 'dashdot', '..': 'dotted', ':': 'dotted'}
+#: Maps full names for line styles used by backends to their short codes. "dotted" will always be a colon (:) here.
 ls_mapper_r = {v: k for k, v in ls_mapper.items()}
 
 
